@@ -14,6 +14,7 @@
 
 	@include respond(phone) {
 		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		height: 70vh;
 	}
 
 	&__logo-box {
@@ -31,5 +32,9 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
+		@include respond(phone) {
+			top: 50%;
+			// padding: 0 2rem;
+		}
 	}
 }
